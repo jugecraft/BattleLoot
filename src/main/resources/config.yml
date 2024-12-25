@@ -1,0 +1,69 @@
+# Configuración del cofre
+chest:
+  spawn-location:
+    world: "mapa"  # El nombre del mundo donde el cofre se va a generar
+    x: 100         # Posición X del cofre
+    y: 65          # Posición Y del cofre
+    z: 100         # Posición Z del cofre
+  despawn-time: 200  # Tiempo en ticks para que el cofre desaparezca (1 tick = 1/20 segundos)
+  loot:
+    type: default   # Tipo de loot: "default" o "advanced"
+    destructionTime: 200  # Tiempo en ticks antes de que el cofre sea destruido después de ser abierto
+
+# Configuración de estadísticas por jugador
+stats:
+  # Aquí se guardarán las estadísticas de los jugadores
+  jugador1:
+    victories: 10  # Número de victorias
+    kills: 150     # Número de asesinatos
+  jugador2:
+    victories: 5   # Número de victorias
+    kills: 120     # Número de asesinatos
+  jugador3:
+    victories: 8   # Número de victorias
+    kills: 90      # Número de asesinatos
+  # Puedes continuar agregando más jugadores según sea necesario.
+
+# Configuración del top de estadísticas
+top:
+  victories: 5  # Número de jugadores que se mostrarán en el top por victorias
+  kills: 5      # Número de jugadores que se mostrarán en el top por asesinatos
+
+# Efectos y configuraciones adicionales
+effects:
+  victory: "particle_effect:WITCH_MAGIC"  # Efecto de partículas al ganar
+  kill: "particle_effect:EXPLOSION_LARGE"  # Efecto de partículas al matar a un jugador
+
+# Configuración del lobby
+lobby:
+  spawn-location:
+    world: "lobby_map"  # Mundo del lobby
+    x: 0
+    y: 100
+    z: 0
+
+# Configuración de arenas (Ejemplo)
+arenas:
+  arena1:
+    world: "arena_map1"
+    x: 50
+    y: 64
+    z: 50
+  arena2:
+    world: "arena_map2"
+    x: 200
+    y: 64
+    z: 150
+
+# Otras configuraciones posibles
+game-settings:
+  max-players-per-game: 16  # Número máximo de jugadores por partida
+  round-time: 600            # Tiempo en segundos de duración de cada ronda
+
+# Información del plugin
+plugin-info:
+  version: "1.0.0"
+  author: "TuNombre"
+scoreboard:
+  serverName: "Servidor DEV"
+  serverIP: "localhost"

@@ -1,0 +1,40 @@
+name: BattleLoot
+version: 1.0
+main: com.battleloot.BattleLoot
+author: TuNombre
+commands:
+  battleloothelp:
+    description: Muestra la lista de comandos de BattleLoot.
+  battlelootreload:
+    description: Recarga la configuración del plugin.
+  battlelootsetLoot:
+    description: Configura el tipo de loot en los cofres.
+    usage: /battlelootsetLoot <default|advanced>
+  battlelootspawnchest:
+    description: Genera un cofre de loot en las coordenadas especificadas.
+    usage: /battlelootspawnchest <x> <y> <z>
+
+  # Nuevos comandos añadidos
+  battlelootarena:
+    description: Comandos para gestionar las arenas del juego.
+    usage: /battlelootarena <create|setLobby|delete> <nombre> [coordenadas]
+
+  battlelootstats:
+    description: Muestra las estadísticas de un jugador.
+    usage: /battlelootstats <jugador>
+
+  battlelootop:
+    description: Muestra estadísticas generales (victorias, asesinatos).
+    usage: /battlelootop <victorias|asesinatos>
+
+  battlelootkit:
+    description: Gestión de los kits disponibles en el juego.
+    usage: /battlelootkit <create|assign> <nombre> <jugador>
+
+  battlelootjoin:
+    description: Únete a una arena específica.
+    usage: /battlelootjoin <arena>
+
+  battlelootstart:
+    description: Inicia una partida en una arena específica.
+    usage: /battlelootstart <arena>
